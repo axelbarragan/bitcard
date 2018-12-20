@@ -376,7 +376,7 @@ textarea {
 	.fila img {
 		padding: 0;
 	}
-	textarea {
+	textarea, input {
 		width: 100%;
 	}
 	.navbar-brand img {
