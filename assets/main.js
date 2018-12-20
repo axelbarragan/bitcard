@@ -28,5 +28,9 @@ $(function() {
   });
 });
 
+if(isMobile.any()){
+   alert("ES MOVIL");
+}
+
 
 });
