@@ -212,10 +212,24 @@ footer>p {
 	background: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)), url(img/fondo-consigue.jpg);
 	background-repeat: no-repeat;
 	-ms-background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
+	-o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
 	background-position: 50% 0; 
+}
+
+.info-contacto {
+	font-size: 1.2em;
+}
+.contacto-telefonos {
+	font-size: 1.1em;
+}
+.link-rosa {
+	color: #bd317a !important;
+}
+.link-rosa:hover {
+	color: #952760 !important;
+	text-decoration: none;
 }
 
 
@@ -233,7 +247,8 @@ textarea {
 	outline: 0;
 	background-color: rgba(	189, 49, 122, 0.1);
 	border: 2px solid #bd317a;
-	width: 500px;
+	/*width: 500px;*/
+	width: 100%;
 }
 .btn-rosa {
 	background-color: #bd317a;
@@ -298,7 +313,9 @@ textarea {
 	.columna-25 {
 		width: 30% !important;
 	}
-	
+	.contacto-telefonos {
+		font-size: 1em;
+	}
 }
 @media (min-width: 576px) and (max-width: 767px) {
 	.img-stores {
@@ -339,6 +356,9 @@ textarea {
 	}
 	.fila img {
 		padding: 0;
+	}
+	.contacto-telefonos {
+		font-size: 1em;
 	}
 	
 }
@@ -382,5 +402,8 @@ textarea {
 	}
 	.navbar-brand img {
 		width: 40%;
+	}
+	.contacto-telefonos {
+		text-align: center;
 	}
 }
