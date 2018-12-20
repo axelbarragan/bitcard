@@ -55,6 +55,7 @@ header {
 .texto-blanco {
 	color: #FFF;
 }
+
 /*
 b3b2b0 para gris en hover menu
 */
@@ -169,23 +170,8 @@ b3b2b0 para gris en hover menu
 
 /*NAVBAR*/
 .navbar {
-	height: 100px;
-	/*background-color: #FFF;*/
-	/*background-color: rgba(51,51,51,0.1);*/
-	/*background-color: transparent;*/
-
-	/*background-image: -webkit-linear-gradient(top, #ffffff 0%, #dfdfdf 100%);
-background-image: linear-gradient(to bottom, #ffffff 0%, #dfdfdf 100%);
-background-repeat: repeat-x;
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffdfdfdf', GradientType=0);*/
 background-image: linear-gradient(to top, rgba(255,0,0,0), rgba(0,0,0,0.3));
 	transition: all .6s;
-}
-.navbar-brand img {
-	/*padding-top: 20px;
-	padding-bottom: 20px;
-	padding-left: 20px;*/
-	width: 60%;
 }
 li.nav-item {
 	padding-right: 20px;
@@ -201,6 +187,13 @@ li.nav-item > a:hover {
 	background: #fff !important;
 	transition: all .6s;
 }
+.custom-toggler.navbar-toggler {
+    border-color: rgb(157,157,157);
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(189,49,122,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
 
 /*FOOTER*/
 footer>p {
@@ -399,9 +392,6 @@ textarea {
 	}
 	textarea, input {
 		width: 100%;
-	}
-	.navbar-brand img {
-		width: 40%;
 	}
 	.contacto-telefonos {
 		text-align: center;
