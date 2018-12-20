@@ -5,6 +5,8 @@
 
 $(document).ready(function() {
 	var navbar = $('.navbar');
+	var navbarToggler = $('.navbar-toggler');
+	var navbarCollapse = $('.navbar-collapse');
 	$(window).scroll(function() {
 		$('.navbar-collapse').collapse('hide');
 		var altura = $(window).scrollTop();
@@ -61,5 +63,7 @@ $(function() {
 		event.preventDefault();
   });
 });
+
+
 
 });
