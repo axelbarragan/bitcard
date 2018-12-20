@@ -25,7 +25,8 @@
 
 /*UNIVERSAL*/
 body {
-	background-color: #FFF;
+	/*background-color: #FFF;*/
+	background-image: url(img/vector-fondo.png);
 	font-family: Arboria-Book;
 }
 
@@ -177,8 +178,8 @@ b3b2b0 para gris en hover menu
 background-image: linear-gradient(to bottom, #ffffff 0%, #dfdfdf 100%);
 background-repeat: repeat-x;
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffdfdfdf', GradientType=0);*/
-background-image: linear-gradient(to top, rgba(255,0,0,0), rgba(51,51,51,0.5));
-	transition: all .3s;
+background-image: linear-gradient(to top, rgba(255,0,0,0), rgba(0,0,0,0.3));
+	transition: all .6s;
 }
 .navbar-brand img {
 	/*padding-top: 20px;
@@ -198,7 +199,7 @@ li.nav-item > a:hover {
 }
 .navbar-color {
 	background: #fff !important;
-	transition: all .3s;
+	transition: all .6s;
 }
 
 /*FOOTER*/
