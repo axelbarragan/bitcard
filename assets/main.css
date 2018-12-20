@@ -1,0 +1,385 @@
+/*
+** MAIN.CSS
+** Bitcard
+*/
+
+/*TIPOGRAFIAS*/
+@font-face {
+	font-family: "Arboria-Bold";
+	src: url("fonts/arboria-bold/Arboria-Bold.eot"); /*eot*/
+	src: url("fonts/arboria-bold/Arboria-Bold.eot?#iefix") format('embedded-opentype'),
+		 url("fonts/arboria-bold/Arboria-Bold.woff") format("woff"),
+		 url("fonts/arboria-bold/Arboria-Bold.ttf") format("truetype"),
+		 url("fonts/arboria-bold/Arboria-Bold.otf") format("opentype"),
+	   url("fonts/arboria-bold/Arboria-Bold.svg#filename") format("svg");
+}
+@font-face {
+	font-family: "Arboria-Book";
+	src: url("fonts/arboria-book/Arboria-Book.eot");
+	src: url("fonts/arboria-book/Arboria-Book.eot?#iefix") format('embedded-opentype'),
+		 url("fonts/arboria-book/Arboria-Book.woff") format("woff"),
+		 url("fonts/arboria-book/Arboria-Book.ttf") format("truetype"),
+		 url("fonts/arboria-book/Arboria-Book.otf") format("opentype"),
+		 url("fonts/arboria-book/Arboria-Book.svg#filename") format("svg");
+}
+
+/*UNIVERSAL*/
+body {
+	background-color: #FFF;
+	font-family: Arboria-Book;
+}
+
+header {
+	max-width: 1200px;
+}
+
+.contenedor-max {
+	width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*COLORES*/
+.back-color_blanco {
+	background-color: #DDD;
+}
+.back-color_gris {
+	background-color: #f3f1f3;
+}
+.texto-rosa {
+	color: #bd317a;
+}
+.texto-blanco {
+	color: #FFF;
+}
+/*
+b3b2b0 para gris en hover menu
+*/
+
+/*TEXTO*/
+.text-justify {
+	text-align: justify;
+}
+.texto-bold {
+	font-family: Arboria-Bold;
+}
+.sombra {
+	text-shadow: 2px 2px #000;
+}
+.link-grid {
+	color: #bd317a;
+}
+.link-grid-small {
+	color: #bd317a;
+	font-size: .7em;
+}
+.link-grid:hover, .link-grid-small:hover {
+	color: #FFF;
+	text-decoration: none;
+}
+.txt-obten-tu-tarjeta {
+	font-size: 3em;
+}
+.txt-haz-una-recarga {
+	font-size: 1.8em !important;
+	line-height: 1.1;
+}
+.contenido > p {
+	font-size: 1.7em;
+}
+.principal {
+	font-size: 3.3em !important;
+}
+.pasos {
+	font-size: 1.6em;
+}
+
+
+/*FLEX*/
+.fila {
+	display: flex;
+}
+.columna-50 {
+	width: 50% !important;
+}
+.columna-25 {
+	width: 25% !important;
+}
+.fila  img {
+	display: block;
+	width: 100% !important;
+	padding: 8px;
+}
+.img-peq {
+	width: 99.1% !important;
+}
+.centrar {
+	/*display: flex;*/
+	align-items: center;
+	justify-content: center;
+}
+.grid, .grid img {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.grid p {
+	position: absolute;
+	font-size: 3em;
+}
+
+/*IMAGENES DE FONDO*/
+.back-img_uno {
+	background-image: url(https://www.dondeir.com/wp-content/uploads/2017/05/11-eventos-de-mayo-2017-en-cdmx-para-el-fin-de-semana-10-1024x767.jpg);
+	background-repeat: no-repeat;
+	background-position: 100%;
+	background-size: cover;
+}
+
+/*TAMAÑO DE IMAGENES*/
+
+
+/*CARRUSEL DE INFORMACION | NOSOTROS*/
+#carouselInformacion .carousel-control-prev-icon {
+ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23595959' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+#carouselInformacion .carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23595959' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+#carouselInformacion .carousel-indicators {
+	top: 250px !important;
+}
+.texto-carrusel-nosotros {
+	padding: 0 120px;
+	font-size: 1.5em;
+	text-align: center;
+	color: #000;
+}
+.carousel-indicators li {
+    border-radius: 12px;
+    width: 12px;
+    height: 12px;
+    background-color: #404040;
+    border: 1px solid #333333;
+}
+
+/*NAVBAR*/
+.navbar {
+	height: 100px;
+	/*background-color: #FFF;*/
+	/*background-color: rgba(51,51,51,0.1);*/
+	/*background-color: transparent;*/
+
+	/*background-image: -webkit-linear-gradient(top, #ffffff 0%, #dfdfdf 100%);
+background-image: linear-gradient(to bottom, #ffffff 0%, #dfdfdf 100%);
+background-repeat: repeat-x;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffdfdfdf', GradientType=0);*/
+background-image: linear-gradient(to top, rgba(255,0,0,0), rgba(51,51,51,0.5));
+	transition: all .3s;
+}
+.navbar-brand img {
+	/*padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;*/
+	width: 60%;
+}
+li.nav-item {
+	padding-right: 20px;
+}
+li.nav-item > a {
+	color: #bd317a !important;
+	font-size: 1.5em;
+}
+li.nav-item > a:hover {
+	color: #AAAAAA !important;
+}
+.navbar-color {
+	background: #fff !important;
+	transition: all .3s;
+}
+
+/*FOOTER*/
+footer>p {
+	font-family: Arboria-Book !important;
+}
+
+/*SECCIONES DE LA PAGINA*/
+.fondo-imagen {
+	background: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)), url(img/fondo-consigue.jpg);
+	background-repeat: no-repeat;
+	-ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+	background-position: 50% 0; 
+}
+
+
+
+
+input {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 2px solid #bd317a;
+  width: 300px;
+}
+textarea {
+	border: 0;
+	outline: 0;
+	background-color: rgba(	189, 49, 122, 0.1);
+	border: 2px solid #bd317a;
+	width: 500px;
+}
+.btn-rosa {
+	background-color: #bd317a;
+	border-color: #bd317a;
+}
+.btn-rosa:hover {
+	background-color: #952760;
+	border-color: #952760;
+}
+
+/*MEDIA QUERIES*/
+@media (min-width: 1200px) {
+	.columna-50 {
+		width: 60% !important;
+	}
+	.columna-25 {
+		width: 30% !important;
+	}
+	.contenedor-max {
+		max-width: 1400px;
+	}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+	.txt-haz-una-recarga {
+		font-size: 1.6em !important;
+		line-height: 1.1;
+	}
+	.grid p {
+		position: absolute;
+		font-size: 2.5em;
+	}
+	.columna-50 {
+		width: 60% !important;
+	}
+	.columna-25 {
+		width: 30% !important;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.img-stores {
+		width: 60% !important;
+	}
+	.txt-haz-una-recarga {
+		font-size: 1.5em !important;
+		line-height: 1.1;
+		padding-top: 20px;
+		text-align: center !important;
+	}
+	.txt-obten-tu-tarjeta {
+		font-size: 2.5em;
+	}
+	.txt-disfruta {
+		font-size: 1.5em;
+	}
+	.grid p {
+		position: absolute;
+		font-size: 2em;
+	}
+	.columna-50 {
+		width: 60% !important;
+	}
+	.columna-25 {
+		width: 30% !important;
+	}
+	
+}
+@media (min-width: 576px) and (max-width: 767px) {
+	.img-stores {
+		width: 60% !important;
+	}
+	.texto-carrusel-nosotros {
+		padding: 0 !important;
+		font-size: 1em !important;
+	}
+	.txt-haz-una-recarga {
+		font-size: 1.5em !important;
+		line-height: 1.2;
+		padding-top: 20px;
+		text-align: center !important;
+	}
+	.txt-obten-tu-tarjeta {
+		font-size: 2.2em;
+		line-height: 1;
+	}
+	.txt-disfruta {
+		font-size: 1.4em;
+	}
+	.pasos {
+		font-size: 1.4em;
+	}
+	.grid p {
+		position: absolute;
+		font-size: 1.5em;
+	}
+	.columna-50 {
+		width: 67% !important;
+	}
+	.columna-25 {
+		width: 33.5% !important;
+	}
+	.img-peq {
+		width: 100% !important;
+	}
+	.fila img {
+		padding: 0;
+	}
+	
+}
+@media (max-width: 575px) {
+	.texto-carrusel-nosotros {
+		padding: 0 30px !important;
+		font-size: 1em !important;
+	}
+	.txt-haz-una-recarga {
+		font-size: 1.4em !important;
+		line-height: 1.2;
+		padding-top: 20px;
+		text-align: center !important;
+	}
+	.txt-obten-tu-tarjeta {
+		font-size: 2.2em;
+		line-height: 1;
+	}
+	.txt-disfruta {
+		font-size: 1.3em;
+		padding: 0 20px;
+	}
+	.pasos {
+		font-size: 1.3em;
+	}
+	.grid p {
+		position: absolute;
+		font-size: 2em;
+	}
+	.columna-50, .columna-25 {
+		width: 100% !important;
+	}
+	.fila {
+		display: block;
+	}
+	.fila img {
+		padding: 0;
+	}
+	textarea {
+		width: 100%;
+	}
+	.navbar-brand img {
+		width: 40%;
+	}
+}
