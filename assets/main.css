@@ -30,11 +30,15 @@ body {
 	font-family: Arboria-Book;
 }
 
-header {
-	max-width: 1200px;
-}
 
 /*.contenedor-max {
+	width: 80%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}*/
+/*.contenedor-grid {
 	width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -261,7 +265,18 @@ textarea {
 		width: 30% !important;
 	}
 	.contenedor-max {
-		max-width: 1400px;
+		width: 80%;
+		padding-right: 15px;
+		padding-left: 15px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.contenedor-grid {
+		width: 90%;
+		padding-right: 15px;
+		padding-left: 15px;
+		margin-right: auto;
+		margin-left: auto;
 	}
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -274,10 +289,24 @@ textarea {
 		font-size: 2.5em;
 	}
 	.columna-50 {
-		width: 60% !important;
+		width: 70% !important;
 	}
 	.columna-25 {
 		width: 30% !important;
+	}
+	.contenedor-max {
+		width: 100%;
+		padding-right: 15px;
+		padding-left: 15px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.contenedor-grid, .fila img {
+		padding: 0;
+	}
+	.img-peq {
+		width: 100% !important;
+		padding: 13px 0 !important;
 	}
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -301,13 +330,27 @@ textarea {
 		font-size: 2em;
 	}
 	.columna-50 {
-		width: 60% !important;
+		width: 70% !important;
 	}
 	.columna-25 {
 		width: 30% !important;
 	}
+	.contenedor-grid, .fila img {
+		padding: 0;
+	}
 	.contacto-telefonos {
 		font-size: 1em;
+	}
+	.contenedor-max {
+		width: 100%;
+		padding-right: 15px;
+		padding-left: 15px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.img-peq {
+		width: 100% !important;
+		padding: 13px 0 !important;
 	}
 }
 @media (min-width: 576px) and (max-width: 767px) {
@@ -336,13 +379,10 @@ textarea {
 	}
 	.grid p {
 		position: absolute;
-		font-size: 1.5em;
+		font-size: 3.5em;
 	}
-	.columna-50 {
-		width: 67% !important;
-	}
-	.columna-25 {
-		width: 33.5% !important;
+	.columna-50, .columna-25 {
+		width: 100% !important;
 	}
 	.img-peq {
 		width: 100% !important;
@@ -353,7 +393,19 @@ textarea {
 	.contacto-telefonos {
 		font-size: 1em;
 	}
-	
+	.fila {
+		display: block;
+	}
+	.principal {
+		line-height: 1;
+	}
+	.contenedor-max {
+		width: 100%;
+		padding-right: 15px;
+		padding-left: 15px;
+		margin-right: auto;
+		margin-left: auto;
+	}
 }
 @media (max-width: 575px) {
 	.texto-carrusel-nosotros {
@@ -388,7 +440,7 @@ textarea {
 		display: block;
 	}
 	.fila img {
-		padding: 0;
+		padding: 0 !important;
 	}
 	textarea, input {
 		width: 100%;
@@ -396,4 +448,18 @@ textarea {
 	.contacto-telefonos {
 		text-align: center;
 	}
+	.contenedor-max {
+		width: 100%;
+		padding-right: 0px;
+		padding-left: 0px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.contenedor-grid {
+	width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-right: auto;
+  margin-left: auto;
+}
 }
