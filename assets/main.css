@@ -30,6 +30,37 @@ body {
 	font-family: Arboria-Book;
 }
 
+header {
+	margin-top: 100px;
+}
+
+.botonSesion {
+	background-color:#bd3179;
+	-moz-border-radius:12px;
+	-webkit-border-radius:12px;
+	border-radius:12px;
+	border:1px solid #bd3179;
+	display:inline-block;
+	cursor:pointer;
+	color: #fff !important;
+	font-family:Arial;
+	padding:0px 11px;
+	font-size: 1.1em !important;
+	text-decoration:none;
+	margin-top: 13px;
+}
+.botonSesion:hover {
+	background-color:#952760;
+	color: white !important;
+	text-decoration:none;
+}
+.botonSesion:active {
+	position:relative;
+	top:1px;
+	text-decoration:none;
+}
+
+
 
 /*.contenedor-max {
 	width: 80%;
@@ -181,11 +212,11 @@ li.nav-item {
 	padding-right: 20px;
 }
 li.nav-item > a {
-	color: #bd317a !important;
+	color: #bd317a;
 	font-size: 1.5em;
 }
 li.nav-item > a:hover {
-	color: #AAAAAA !important;
+	color: #AAAAAA;
 }
 .navbar-color {
 	background: #fff !important;
