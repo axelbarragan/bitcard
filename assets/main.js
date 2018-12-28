@@ -14,7 +14,7 @@ $(document).ready(function() {
   	var valorTop = 110;
   	var ctdMover = 0;
   	if(altura <= valorTop) {
-  		$('html, body').stop().animate({scrollTop: $( $anchor ).offset().top-ctdMover}, 1200, 'easeInOutExpo');
+  		$('html, body').stop().animate({scrollTop: $( $anchor ).offset().top-ctdMover}, 500, 'easeInOutExpo');
   	}
   });
 
@@ -45,5 +45,8 @@ $(document).ready(function() {
 	$('.navbar-nav>li>a').on('click', function(){
 		$('.navbar-collapse').collapse('hide');
 	});
-	
+	$('.navbar-brand').on('click', function(){
+		$('.navbar-collapse').collapse('hide');
+	});
+
 });
