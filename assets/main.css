@@ -168,13 +168,6 @@ b3b2b0 para gris en hover menu
 	font-size: 3em;
 }
 
-/*IMAGENES DE FONDO*/
-.back-img_uno {
-	background-image: url(https://www.dondeir.com/wp-content/uploads/2017/05/11-eventos-de-mayo-2017-en-cdmx-para-el-fin-de-semana-10-1024x767.jpg);
-	background-repeat: no-repeat;
-	background-position: 100%;
-	background-size: cover;
-}
 
 /*TAMAÑO DE IMAGENES*/
 
@@ -205,7 +198,7 @@ b3b2b0 para gris en hover menu
 
 /*NAVBAR*/
 .navbar {
-background-image: linear-gradient(to top, rgba(255,0,0,0), rgba(0,0,0,0.3));
+background-image: linear-gradient(to top, rgba(255,0,0,0), rgba(0,0,0,0.18));
 	transition: all .6s;
 }
 li.nav-item {
